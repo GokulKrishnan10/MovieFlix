@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="search-box">
+    <div class="search-bar">
+        <div class="search-text">
+            <input type='text' placeholder="Search for Movies" (keydown.enter)="searchForMovies(movie.value)" (input)="handleInput(movie.value)" #movie>
+            <app-banner *ngIf="display" [movies]="searchArray"></app-banner>
+            <div class='search-button' (click)="searchForMovies(movie.value)">
+                <span class="material-symbols-outlined">
+                search
+                </span>   
+            </div>   
+        </div>        
+    </div>
+    <div class="search-container">
+        <app-movie *ngFor="let movie of moviesArray" [movies]="movie"></app-movie>
+    </div>
+</div>
+<!-- <app-popup *ngIf="popElement" [pop]="popElement" (newPopEvent)="changeIt($event)" [moviesObject]="popvalues" [Width]="width" [Height]="height"></app-popup> -->

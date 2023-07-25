@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.genre-container{
+    background-color:  snow;
+    height: 12cm;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color:#8B0000;
+}
+h1{
+    margin: 10px;
+    font-family: 'Nunito',sans-serif;  
+    color: white;
+}
+.container-movie{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    margin: 10px;
+    background-color: #fff;
+}

@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.tv-shows{
+    display: flex;
+    flex-wrap: wrap; 
+    background-color:rgba(210, 200, 200, 0.6);
+    height: 10cm;
+    padding: 10px;
+    overflow: hidden;
+    overflow: scroll;
+}
+h1{
+    font-family: 'Ubuntu',sans-serif;
+}

@@ -1,0 +1,9 @@
+<div class="movie-container">
+     <div class="selection">
+          <select #selected name="genre" id="genre" (change)="onChange(selected)">
+               <option *ngFor="let e of genre" [id]="e.id" (click)="openPop()">{{e.type}}</option>
+          </select>
+     </div>  
+</div>
+<app-genre [main]="select" [id]="id" (popEvent)="changeIt($event)" (passToPop)="sendToPop($event)"></app-genre>
+<app-popup *ngIf="popElement" [pop]="popElement" (newPopEvent)="changeIt($event)" [moviesObject]="popvalues" [Width]="width" [Height]="height"></app-popup>

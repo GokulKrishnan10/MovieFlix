@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+img{
+    width: 50px;
+    height: 70px;
+    margin: 5px;
+}
+.small-banner{
+    font-family: 'Rubik',sans-serif;
+    margin: 10px;
+    display: flex;
+    background-color: grey;
+    color: white;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+}

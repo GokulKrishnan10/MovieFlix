@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap');
+.header{
+    display: flex;
+    margin: 0;
+    background-color: #000;
+}
+.header-list{
+    margin-top: 30px;
+    list-style: none;
+    height: 1cm;
+    margin: auto;
+}
+li{
+    display: inline;
+    padding: 30px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+li:hover{
+    cursor: pointer;
+    color: black;
+    border-radius: 5px;
+    background-color: #fff;
+}
+h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 30px;
+    font-weight: bold;
+}
+.header-title{
+    display: flex;
+    /* align-self: flex-start;
+    justify-content: flex-start; */
+}
+.material-symbols-outlined {
+    color: white;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 60px;
+    font-family: 'Material Symbols Outlined', sans-serif;
+    line-height: 1;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+@media(max-width:800px){
+    li{
+        font-size: 15px;
+        padding: 5px;
+    }
+}

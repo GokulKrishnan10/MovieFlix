@@ -1,0 +1,8 @@
+<div class="genre-container">
+    <h1>Bests from {{main}} Genre</h1>
+    <div class="container-movie">
+        <div *ngFor="let object of genres">
+            <app-movie [movies]="object" (click)="change(object)"></app-movie>
+        </div>
+    </div>  
+</div>

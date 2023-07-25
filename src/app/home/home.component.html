@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div class="home-container">
+    <h1>Popular Movies of the week</h1>
+    <app-shows url="https://api.themoviedb.org/3/trending/movie/week?language=en-US" (popEvent)="changeIt($event)" (passToPop)="sendToPop($event)"></app-shows>
+    <h1>TV shows and Anime</h1>
+    <app-shows url="https://api.themoviedb.org/3/trending/tv/week?language=en-US" (popEvent)="changeIt($event)" (passToPop)="sendToPop($event)"></app-shows>
+</div>
+<app-fotter></app-fotter>
+<app-popup *ngIf="popElement" [pop]="popElement" (newPopEvent)="changeIt($event)" [moviesObject]="popvalues" [Width]="width"></app-popup>
+
+<!-- <app-genre [main]="select" [id]="id" (popEvent)="changeIt($event)" (passToPop)="sendToPop($event)"></app-genre> -->

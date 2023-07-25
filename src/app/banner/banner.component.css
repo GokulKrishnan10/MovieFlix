@@ -1,0 +1,8 @@
+.banner{
+    background-color: darkred;
+    padding: 10px;
+    border-radius: 5px;
+    height: 20cm;
+    overflow: scroll;
+    box-shadow: 5px 5px 5px 5px red;
+}

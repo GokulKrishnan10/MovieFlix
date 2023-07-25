@@ -1,0 +1,17 @@
+<div class="pop-container" [style.width]="Width+'px'" [style.height]="Height+'px'">
+    <div class="pop-div">    
+        <div class="close-div">
+            <button (click)="closeIt()">Close</button>
+        </div>
+        <h1>{{moviesObject.title || moviesObject.original_title}}</h1>
+        <div class="content">
+            <div class="img-div">
+                <img [src]="'https://image.tmdb.org/t/p/original/'+moviesObject.poster_path" alt="Image">
+            </div>
+            <div class="about-image">
+                <p>{{moviesObject.overview}}</p>
+                <p>Release Date:{{moviesObject.release_date}}</p>
+            </div>
+        </div>
+    </div>
+</div>

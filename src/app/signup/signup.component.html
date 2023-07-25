@@ -1,0 +1,43 @@
+<div class="outer-form">
+    <div class="form-container">
+        <div class="title">
+            <span class="material-symbols-outlined">movie</span>
+            <h2>SignUp for Movieflix</h2>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="handleSubmission()">
+            <input type="text" placeholder="Enter email" formControlName="email">
+            <div *ngIf="(loginForm.controls['email'].invalid) && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+                <div *ngIf="loginForm.controls['email'].errors?.required"class="error">
+                    Email required
+                </div>
+                <div *ngIf="loginForm.controls['email'].errors?.pattern" class="error">
+                    Email does not follow the specified pattern
+                </div>
+            </div>
+            <br/>
+            <input type="password" placeholder="Enter password" formControlName="password">
+            <div *ngIf="(loginForm.controls['password'].invalid) && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">
+                <div *ngIf="loginForm.controls['password'].errors?.required" class="error">
+                    User password required
+                </div>
+                <div *ngIf="loginForm.controls['password'].errors?.minlength" class="error">
+                    User password must be minimum 5
+                </div>
+            </div>
+            <br/>
+            <input type="text" placeholder="Enter your phone number" formControlName="phone_number">
+            <div *ngIf="(loginForm.controls['phone_number'].invalid) && (loginForm.controls['phone_number'].dirty || loginForm.controls['phone_number'].touched)">
+                <div *ngIf="loginForm.controls['phone_number'].errors?.required" class="error">
+                    User phone number required
+                </div>
+                <div *ngIf="loginForm.controls['phone_number'].errors?.minlength" class="error">
+                    User phone number contain only 10 digits
+                </div>
+            </div>
+            <br/>
+            <button class="red-button">SignUp</button>
+            <br/>
+            <br/>
+        </form>
+    </div>
+</div>

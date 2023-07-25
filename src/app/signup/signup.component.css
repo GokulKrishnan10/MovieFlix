@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap');
+.form-container{
+    display: flex;
+    flex-direction: column;
+    background-color:black;
+    box-shadow: 5px 5px 5px 5px white;
+}
+body{
+    background-color: rgba(0,0,0,0.7);
+}
+input{
+    width: 500px;
+    height: 30px;
+    margin: 20px;
+    outline: none;
+    background-color:black;
+    border-bottom: 2px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    font-size: 15px;
+}
+input:focus{
+    outline: none;
+    border-width: 0;
+    border-bottom: 2px solid white;
+}
+.outer-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/bff5732c-7d13-45d1-9fab-476db25a1827/46bc87cd-4c4c-4485-8b93-d5f21c581d56/IN-en-20230710-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+}
+h2{
+    font-family: 'Oswald',sans-serif;
+    color: white;
+    margin: 50px;
+}
+button{
+    margin-left: 150px;
+    width: 6cm;
+    height: 50px;
+}
+button:hover{
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    transform: scale(1.1);
+}
+.material-symbols-outlined {
+    color: white;
+    margin-top: 35px;
+    margin-left: 20px;
+    font-size: 60px;
+    font-family: 'Material Symbols Outlined', sans-serif;
+    line-height: 1;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+}
+.title{
+    display:flex;
+}
+.red-button{
+    background-color:red;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Quicksand',sans-serif;
+    border-radius: 25px;
+}
+.error{
+    background-color: red;
+    color: white;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-family: 'Poppins',sans-serif;
+    padding: 15px;
+    border-radius: 10px;
+}

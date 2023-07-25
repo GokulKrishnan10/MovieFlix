@@ -1,0 +1,28 @@
+.movie-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+select{
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    -webkit-appearance: menulist-button;  
+    -moz-appearance:none;
+    font-size: 20px;
+}
+.selection{
+    display: flex;
+    text-align: center;
+    margin-top: 4%;
+}
+app-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+html{
+    overflow: hidden;
+}

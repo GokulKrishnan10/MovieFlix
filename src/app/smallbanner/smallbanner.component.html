@@ -1,0 +1,7 @@
+<div class="small-banner">
+    <img [src]="'https://image.tmdb.org/t/p/original/'+(movieObject.poster_path || movieObject.backdrop_path)" alt="Image">
+    <div class="small-description">
+        <h4>{{movieObject.title}}</h4>
+        <h5>Rating: {{movieObject.vote_average}}</h5>
+    </div>
+</div>

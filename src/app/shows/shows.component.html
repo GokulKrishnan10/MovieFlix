@@ -1,0 +1,6 @@
+<div class="tv-shows">
+    <div *ngFor="let object of movies">
+        <app-movie [movies]="object" (click)="change(object)"></app-movie>
+    </div>
+</div>
+

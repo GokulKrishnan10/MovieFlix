@@ -1,0 +1,5 @@
+<div class="movie">
+    <img [src]="'https://image.tmdb.org/t/p/original/'+(movies.poster_path || movies.backdrop_path)" alt="movie.original_title"/>
+    <h5>{{movies.original_title || movies.name}}</h5>
+    <h3>Rating: {{movies.vote_average }}⭐️</h3>
+</div>

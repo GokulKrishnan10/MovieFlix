@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+.movie{
+    display: flex;
+    background-color: dimgrey;
+    width: 5cm; 
+    /* height: 7cm; */
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px 0 grey;
+    border-radius: 5px;
+    font-family: 'Lato',sans-serif;
+}
+img{
+    background-color: black;
+    height: 4cm;
+    border-radius: 15px;
+}
+.movie:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.movie {
+    transition: transform 0.3s ease;
+}
